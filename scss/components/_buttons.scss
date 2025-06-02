@@ -1,0 +1,35 @@
+@use '../base/variables' as *;
+@use '../mixins' as *;
+
+
+// HOMEPAGE BUTTON
+.home__button {
+    @include home-button;
+}
+
+.home__button-text {
+    @include button-text;
+}
+
+// WORKS BUTTONS
+.works__button {
+    @include secondary-button;
+}
+
+.works__button-text {
+    @include secondary-button-text;
+}
+
+// ABOUT BUTTON
+.about__button-text {
+    @include secondary-button-text;
+}
+
+.about__button {
+    @include secondary-button;
+}
+
+// SUBPAGES BUTTONS
+.subpage__button {
+    @include tertiary-button;
+}

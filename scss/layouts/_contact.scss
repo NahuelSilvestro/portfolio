@@ -1,0 +1,17 @@
+@use '../base/variables' as *;
+
+// MOBILE FIRST
+.contact {
+    display: flex;
+    height: 90vh;
+    background-color: $color-dark;
+    color: $color-light;
+}
+
+// DESKTOP / TABLET
+@media (min-width: 678px) {
+    .contact {
+        padding: 0px 50px 0px 50px;
+        height: auto;
+    }
+}

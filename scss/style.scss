@@ -1,0 +1,20 @@
+@use 'layouts/home' as *;
+@use 'layouts/about' as *;
+@use 'layouts/contact' as *;
+@use 'layouts/header' as *;
+@use 'layouts/works' as *;
+@use 'layouts/subpages' as *;
+@use 'layouts/sheets' as *;
+@use 'layouts/footer' as *;
+@use 'base/variables' as *;
+@use 'base/reset' as *;
+@use 'base/texts' as *;
+@use 'components/chevron' as *;
+@use 'components/buttons' as *;
+@use 'components/icons' as *;
+@use 'components/videos' as *;
+@use 'components/cards' as *;
+@use 'mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');

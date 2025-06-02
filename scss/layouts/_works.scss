@@ -1,0 +1,18 @@
+@use '../base/variables' as *;
+
+.works {
+    padding-top: 112px;
+    display: flex;
+}
+// TABLET / DESKTOP
+@media (min-width: 767.9px) {
+    .works {
+        margin: 0px 120px 0px 120px;
+    }
+}
+
+@media (min-width: 1199.9px) {
+    .works {
+        margin: 0px 240px 0px 240px;
+    }
+}
