@@ -6,7 +6,7 @@
   height: 100vh;
   overflow: hidden;
 }
-.home__video-background #home__bg-video {
+.home__video-background video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18,17 +18,49 @@
   z-index: -1;
   object-fit: cover;
 }
+.home__video-background .home__video-desktop {
+  display: block;
+}
+@media (max-width: 768px) {
+  .home__video-background .home__video-desktop {
+    display: none;
+  }
+}
+.home__video-background .home__video-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .home__video-background .home__video-mobile {
+    display: block;
+    min-width: auto;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .home__video-background .home__video-mobile {
+    min-width: 100%;
+    min-height: auto;
+    width: auto;
+    height: 100%;
+  }
+}
+.home__video-background .home__video-fallback {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .home__video-background .home__text-overlay {
+  margin-top: 80px;
   position: relative;
   z-index: 1;
   color: white;
   text-align: center;
   padding-top: 50vh;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.home__video-background .home__text-overlay .home__text {
-  font-weight: 900;
-  padding-bottom: 24px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .about {
@@ -94,9 +126,9 @@
 }
 .header__nav .header__menu:first-child .header__menu-logo {
   font-size: 40px;
-  line-height: 24px;
+  line-height: 18px;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 900;
 }
 .header__nav .header__menu:first-child .header__menu-logo .header__link {
@@ -132,8 +164,7 @@
   }
 }
 .works {
-  padding-top: 112px;
-  display: flex;
+  border: solid 1px;
 }
 
 @media (min-width: 767.9px) {
@@ -290,9 +321,8 @@ body {
   background-color: #f8f9fa;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  padding: 16px 32px;
-  font-weight: 600;
+  border-radius: 50px;
+  padding: 16px 48px;
   font-size: 18px;
   box-shadow: 1px 1px 5px 0px #232323;
 }
@@ -301,7 +331,7 @@ body {
   color: #232323;
   border: none;
   background-color: #f8f9fa;
-  font-weight: 600;
+  font-weight: 800;
 }
 .home__button:hover {
   transform: scale(1.2);
@@ -315,7 +345,7 @@ body {
   color: #232323;
   border: none;
   background-color: #f8f9fa;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .works__button {

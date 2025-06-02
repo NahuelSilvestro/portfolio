@@ -1,36 +1,72 @@
-// HOMEPAGE BACKGROUND VIDEO
 .home__video-background {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 
-    #home__bg-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1;
-        object-fit: cover;
-    }
+        // Shared video styles
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
+    
+        // Desktop video (hidden on mobile)
+        .home__video-desktop {
+            display: block;
+        
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    
+        // Mobile video (hidden on desktop)
+        .home__video-mobile {
+            display: none;
 
-    // TEXT OVERLAY
-    .home__text-overlay {
+            // Mobile-specific video positioning
+            @media (max-width: 768px) {
+                display: block;
+                // Optional: Different scaling for portrait videos
+                min-width: auto;
+                min-height: 100%;
+                width: 100%;
+                height: auto;
+            }
+    
+            // Landscape mobile devices
+            @media (max-width: 768px) and (orientation: landscape) {
+                min-width: 100%;
+                min-height: auto;
+                width: auto;
+                height: 100%;
+            }
+        }
+    
+        // Fallback image
+        .home__video-fallback {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    
+        // TEXT OVERLAY (responsive adjustments)
+        .home__text-overlay {
+            margin-top: 80px;
         position: relative;
         z-index: 1;
         color: white;
         text-align: center;
         padding-top: 50vh;
-        text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-        .home__text {
-            font-weight: 900;
-            padding-bottom: 24px;
-        }
+        text-shadow: 0 0 10px rgba(0,0,0);
     }
-
 }

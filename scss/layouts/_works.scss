@@ -1,8 +1,7 @@
 @use '../base/variables' as *;
 
 .works {
-    padding-top: 112px;
-    display: flex;
+    border: solid 1px;
 }
 // TABLET / DESKTOP
 @media (min-width: 767.9px) {

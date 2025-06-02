@@ -48,23 +48,39 @@
     <main id="main">
 
         <!-- HOME -->
-        <section id="home" class="home">
+        <section id="home" class="home" aria-label="Hero section with background video">
             <div class="home__video-background">
-                <video autoplay muted loop playsinline id="home__bg-video">
+                <!-- Desktop Video (hidden on mobile) -->
+                <video class="home__video-desktop" autoplay muted loop playsinline 
+                    aria-hidden="false" id="home__bg-video">
                     <source src="assets/videos/Header_porfolio.mp4" type="video/mp4">
-                    <!-- Fallback para navegadores que no soportan video -->
-                    <p>Tu navegador no soporta videos HTML5. Aquí hay una <a href="tu-video.mp4">descarga</a>.</p>
-                    <button>Reel</button>
+                    <track kind="captions" src="assets/videos/captions.vtt" srclang="en" label="English">
                 </video>
+                
+                <!-- Mobile Video (hidden on desktop) -->
+                <video class="home__video-mobile" autoplay muted loop playsinline 
+                    aria-hidden="false" id="home__bg-video-mobile">
+                    <source src="assets/videos/Portfolio_vertical.mp4" type="video/mp4">
+                    <track kind="captions" src="assets/videos/Header_porfolio.mp4" srclang="en" label="English">
+                </video>
+
+                <!-- Fallback Content -->
+                <div class="home__video-fallback" aria-hidden="true">
+                    <img src="assets/images/video-fallback.jpg" alt="Still frame from portfolio video">
+                </div>
+
+                <!-- Content Overlay -->
                 <div class="home__text-overlay">
-                    <h1 class="home__text" tabindex="0">It's all about storytelling.</h1>
-                    <a href="#" class="home__button">
+                    <a href="#" class="home__button" aria-label="View demo reel">
                         <button class="home__button-text">View reel</button>
                     </a>
                 </div>
+
+                <!-- Scroll Indicator -->
                 <div class="scroll-chevron">
-                    <a class="home__chevron" href="#works">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <a class="home__chevron" href="#works" aria-label="Scroll to works section">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" 
+                            aria-hidden="true" focusable="false">
                             <path d="M7 10l5 5 5-5"/>
                         </svg>
                     </a>
