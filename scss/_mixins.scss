@@ -79,10 +79,9 @@
     background-color: $color-dark;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 18px 18px;
-    font-size: 12px;
-    box-shadow: 1px 1px 5px 0px $color-secondary;
+    border-radius: 80px;
+    padding: 12px 32px;
+    font-size: 11px;
 
     .works__button-text {
         @include secondary-button-text;

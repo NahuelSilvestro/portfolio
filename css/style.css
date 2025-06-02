@@ -16,7 +16,7 @@
   width: auto;
   height: auto;
   z-index: -1;
-  object-fit: contain;
+  object-fit: cover;
 }
 .home__video-background .home__text-overlay {
   position: relative;
@@ -146,6 +146,10 @@
     margin: 0px 240px 0px 240px;
   }
 }
+.index__latest-works:hover {
+  text-decoration: none;
+}
+
 .subpage {
   padding-top: 100px;
 }
@@ -318,10 +322,9 @@ body {
   background-color: #232323;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  padding: 18px 18px;
-  font-size: 12px;
-  box-shadow: 1px 1px 5px 0px #818181;
+  border-radius: 80px;
+  padding: 12px 32px;
+  font-size: 11px;
 }
 .works__button .works__button-text {
   text-decoration: none;
@@ -351,10 +354,9 @@ body {
   background-color: #232323;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  padding: 18px 18px;
-  font-size: 12px;
-  box-shadow: 1px 1px 5px 0px #818181;
+  border-radius: 80px;
+  padding: 12px 32px;
+  font-size: 11px;
 }
 .about__button .works__button-text {
   text-decoration: none;

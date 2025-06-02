@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+
+.index__latest-works {
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
