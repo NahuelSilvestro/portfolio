@@ -35,7 +35,7 @@
 
         // HAMBUGUER MENU ICON
         .navbar-toggler {
-            border: none;
+            border-style: none;
             padding: 0.5rem;
         
             &:focus {
@@ -63,7 +63,6 @@
                     display: block;
                 
                     &:hover, &:focus {
-                        color: $color-primary;
                         transition: all 0.2s ease-out;
                     }
                 }
@@ -112,7 +111,72 @@
         margin-top: 0;
 }
 
-// Accessibility: Focus styles
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 3px rgba($color-primary, 0.5);
+// Custom Hamburger Icon Animation
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    transition: all 0.3s ease;
+    
+    // Hide default Bootstrap icon
+    .navbar-toggler-icon {
+      display: none;
+    }
+    
+    // Create custom icon lines
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: rgba($color-dark, 0.8);
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+    
+    // Middle line (becomes transparent when active)
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    // Bottom line
+    &::after {
+      bottom: 0;
+    }
+    
+    // Top line (using span element)
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: rgba($color-dark, 0.8);
+      transition: all 0.3s ease;
+    }
+    
+    // Active state (when menu is open)
+    &[aria-expanded="true"] {
+      span {
+        opacity: 0;
+      }
+      
+      &::before {
+        transform: rotate(45deg) translateY(-50%);
+      }
+      
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+      }
+    }
+    
+    &:focus {
+      box-shadow: 0 0 0 2px red;
+    }
   }
