@@ -1,8 +1,9 @@
 @use '../base/variables' as *;
-
+// MOBILE FIRST
 .works {
-    border: solid 1px;
+    padding-top: 56px;
 }
+
 // TABLET / DESKTOP
 @media (min-width: 767.9px) {
     .works {

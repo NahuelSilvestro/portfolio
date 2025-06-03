@@ -92,9 +92,70 @@
 }
 .contact {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #232323;
   color: #f8f9fa;
+}
+.contact .email-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contact .email-container {
+    text-align: left;
+  }
+}
+.contact .email-container .container {
+  border: 1px solid red;
+  min-height: 90vh;
+}
+.contact .email-container .container .contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact .email-container .container .contact-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.contact .email-container .container .contact-text a {
+  color: #1531ae;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact .email-container .social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.contact .email-container .social-icons-container .social-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.contact .email-container .social-icons-container .social-icons .social-icon {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.contact .email-container .social-icons-container .social-icons .social-icon:hover {
+  color: #1531ae;
+}
+.contact .email-container .social-icons-container .social-icons .social-icon-divider {
+  cursor: default;
+  color: rgba(248, 249, 250, 0.5);
+  font-size: 1rem;
+}
+.contact .email-container .disclaimer {
+  margin-bottom: 48px;
+  border-top: 1px solid rgba(248, 249, 250, 0.2);
+}
+.contact .email-container .disclaimer-text {
+  font-size: 0.9rem;
+  color: rgba(248, 249, 250, 0.7);
+  margin: 0;
 }
 
 @media (min-width: 678px) {
@@ -241,7 +302,7 @@
 }
 
 .works {
-  border: solid 1px;
+  padding-top: 56px;
 }
 
 @media (min-width: 767.9px) {
