@@ -24,23 +24,38 @@
     <body>
         <!-- NAV BAR -->
         <header class="header" id="header" role="banner">
-            <nav class="header__nav" aria-label="Main navigation">
-                <ul class="header__menu" role="menubar">
-                    <li class="header__menu-logo" role="none">
-                        <a class="header__link" href="../index.html" role="menuitem" tabindex="0">Nahuel Silvestro</a>
-                    </li>
-                </ul>
-                <ul class="header__menu" role="menubar">
-                    <li class="header__menu-item" role="none">
-                        <a class="header__link" href="#works" role="menuitem" tabindex="0">Works</a>
-                    </li>
-                    <li class="header__menu-item" role="none">
-                        <a class="header__link" href="#about" role="menuitem" tabindex="0">About</a>
-                    </li>
-                    <li class="header__menu-item" role="none">
-                        <a class="header__link" href="#contact" role="menuitem" tabindex="0">Contact</a>
-                    </li>
-                </ul>
+            <nav class="header__nav navbar navbar-expand-lg" aria-label="Main navigation">
+                <!-- Logo -->
+                <a class="header__link navbar-brand" href="../index.html" role="menuitem" tabindex="0">
+                    Nahuel<br aria-hidden="true">Silvestro
+                </a>
+            
+                <!-- Hamburger Button -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+        
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="header__menu navbar-nav ms-auto" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./commercial.html" role="menuitem">Commercial</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./music.html" role="menuitem">Music</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./fiction.html" role="menuitem">Fiction</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         

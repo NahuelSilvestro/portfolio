@@ -17,7 +17,9 @@
             backdrop-filter: blur(10px);
 
             .header__link {
-                border-bottom: 1px solid $color-secondary;
+              border-style:none;
+              text-transform: uppercase;
+              border-bottom: 1px solid $color-secondary;
             }
         }
         
@@ -39,7 +41,7 @@
             padding: 0.5rem;
         
             &:focus {
-                    box-shadow: 0 0 0 2px $color-primary;
+                    box-shadow: 0 0 0 0px $color-light;
                 }
         
             .navbar-toggler-icon {
@@ -67,35 +69,6 @@
                     }
                 }
             }
-        }
-    }
-}
-
-    // Desktop Styles
-    @media (min-width: 992px) {
-    .header {
-        &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        .navbar-collapse {
-            flex-grow: 0; // Prevent Bootstrap from stretching the nav
-        }
-        
-        .header__menu {
-            display: flex;
-            margin-left: auto;
-            
-            .header__menu-item {
-            padding: 0 0 0 40px;
-            
-            .header__link {
-                padding: 8px 0;
-                font-size: 18px;
-            }
-            }
-        }
         }
     }
 }
@@ -180,3 +153,71 @@
       box-shadow: 0 0 0 2px red;
     }
   }
+
+// TABLET / DESKTOP
+@media (min-width: 992px) {
+    .header {
+        &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+        
+        .header__menu {
+            display: flex;
+            margin-left: auto;
+            border-style:none;
+            
+            .nav-item {
+            padding: 0 0 0 40px;
+            
+            .header__link {
+                border-bottom:none;
+                padding: 8px 0;
+                font-size: 14px;
+                border-bottom: 0px;
+            }
+            }
+        }
+        }
+    }
+}
+
+//<header class="header" id="header" role="banner">
+  //          <nav class="header__nav navbar navbar-expand-lg" aria-label="Main navigation">
+    //            <!-- Logo -->
+      //          <a class="header__link navbar-brand" href="../index.html" role="menuitem" tabindex="0">
+      //              Nahuel<br aria-hidden="true">Silvestro
+        //        </a>
+          //  
+            //    <!-- Hamburger Button -->
+              //  <button 
+                //    class="navbar-toggler" 
+                  //  type="button" 
+                  //  data-bs-toggle="collapse" 
+                  //  data-bs-target="#navbarContent"
+                  //  aria-controls="navbarContent" 
+                  //  aria-expanded="false" 
+                  //  aria-label="Toggle navigation">
+                  //  <span></span>
+                //</button>
+        
+       //         <!-- Menu Items -->
+       //         <div class="collapse navbar-collapse" id="navbarContent">
+       //             <ul class="header__menu navbar-nav ms-auto" role="menubar">
+       //                 <li class="nav-item" role="none">
+       //                     <a class="header__link nav-link" href="./fiction.html" role="menuitem">Fiction</a>
+       //                 </li>
+       //                 <li class="nav-item" role="none">
+       //                     <a class="header__link nav-link" href="./music.html" role="menuitem">Music</a>
+       //                 </li>
+       //                 <li class="nav-item" role="none">
+       //                     <a class="header__link nav-link" href="./youtube.html" role="menuitem">Youtube</a>
+       //                 </li>
+       //             </ul>
+       //         </div>
+       //     </nav>
+       // </header>
