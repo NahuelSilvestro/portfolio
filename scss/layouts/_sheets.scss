@@ -2,11 +2,11 @@
 
 // MOBILE FIRST
 .sheet__main {
-    margin-top: 100px;
+    margin-top: 76px;
 }
 
 .project__text {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 24px 40px 24px;
 
     .project__title {
         font-weight: 600;
@@ -25,6 +25,7 @@
 .related-works {
     background-color: $color-dark;
     color: $color-light;
+    text-transform: uppercase;
 }
 
 // TABLET / DESKTOP

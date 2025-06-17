@@ -19,6 +19,7 @@
             .header__link {
               border-style:none;
               text-transform: uppercase;
+              color: $color-dark;
               border-bottom: 1px solid $color-secondary;
             }
         }
@@ -150,7 +151,7 @@
     }
     
     &:focus {
-      box-shadow: 0 0 0 2px red;
+      box-shadow: 0 0 0 0px $color-light;
     }
   }
 

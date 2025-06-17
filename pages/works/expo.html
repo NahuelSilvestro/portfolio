@@ -22,25 +22,40 @@
     <body>
         <!-- NAV BAR -->
         <header class="header" id="header" role="banner">
-        <nav class="header__nav" aria-label="Main navigation">
-            <ul class="header__menu" role="menubar">
-                <li class="header__menu-logo" role="none">
-                    <a class="header__link" href="../../index.html" role="menuitem" tabindex="0">Nahuel Silvestro</a>
-                </li>
-            </ul>
-            <ul class="header__menu" role="menubar">
-                <li class="header__menu-item" role="none">
-                    <a class="header__link" href="../documentary.html" role="menuitem" tabindex="0">Documentary</a>
-                </li>
-                <li class="header__menu-item" role="none">
-                    <a class="header__link" href="../music.html" role="menuitem" tabindex="0">Music</a>
-                </li>
-                <li class="header__menu-item" role="none">
-                    <a class="header__link" href="../fiction.html" role="menuitem" tabindex="0">Fiction</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="header__nav navbar navbar-expand-lg" aria-label="Main navigation">
+                <!-- LOGO -->
+                <a class="header__link navbar-brand" href="../index.html" role="menuitem" tabindex="0">
+                    Nahuel<br aria-hidden="true">Silvestro
+                </a>
+            
+                <!-- HAMBURGER BUTTON-->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+        
+                <!-- MENU ITEMS -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="header__menu navbar-nav ms-auto" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./fiction.html" role="menuitem">Fiction</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./music.html" role="menuitem">Music</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="header__link nav-link" href="./youtube.html" role="menuitem">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         
         <!-- MAIN PAGE -->
         <main id="main" class="sheet__main">
@@ -102,5 +117,8 @@
                 </div>
             </section>
         </main>
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

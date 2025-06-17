@@ -181,6 +181,7 @@
 .header__nav .navbar-collapse .header__link {
   border-style: none;
   text-transform: uppercase;
+  color: #232323;
   border-bottom: 1px solid #818181;
 }
 .header__nav .navbar-brand {
@@ -279,7 +280,7 @@
   bottom: 50%;
 }
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 2px red;
+  box-shadow: 0 0 0 0px #f8f9fa;
 }
 
 @media (min-width: 992px) {
@@ -325,32 +326,34 @@
 }
 
 .subpage {
-  padding-top: 100px;
+  padding-top: 76px;
 }
 
 @media (min-width: 767.9px) {
   .subpage {
-    padding: 60px 80px 0px 80px;
-    margin-top: 40px;
+    padding: 0px 80px 0px 80px;
+    margin-top: 76px;
   }
   .subpage .subpage__card-container {
     border-bottom: 1px solid #818181;
+    border: 1px solid blue;
   }
 }
 @media (min-width: 991.9px) {
   .subpage {
-    padding: 60px 80px 0px 80px;
+    padding: 0px 80px 0px 80px;
   }
   .subpage .subpage__card-container {
     padding: 50px 0px 50px 0px;
+    border: 1px solid red;
   }
 }
 .sheet__main {
-  margin-top: 100px;
+  margin-top: 76px;
 }
 
 .project__text {
-  padding: 50px 50px 50px 50px;
+  padding: 40px 24px 40px 24px;
 }
 .project__text .project__title {
   font-weight: 600;
@@ -367,6 +370,7 @@
 .related-works {
   background-color: #232323;
   color: #f8f9fa;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -424,8 +428,29 @@ body {
   color: #818181;
 }
 
+.subpage__card-title {
+  color: #232323;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project__title {
+  color: #232323;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subpage__card-copy {
+  color: #232323;
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
 .sheet__subtitle {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding: 20px 0px 10px 0px;
 }
@@ -544,6 +569,7 @@ body {
   background-color: #f8f9fa;
   border: none;
   font-weight: 500;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .subpage__button .subpage__button-text:hover {

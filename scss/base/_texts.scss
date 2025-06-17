@@ -12,7 +12,6 @@
 }
 
 // HOMEPAGE / CARD COPY TEXT
-
 .works__card-copy {
     @include homepage-card-copy;
 }
@@ -20,6 +19,20 @@
 // HOMEPAGE / LATEST WORKS TITLE
 .index__latest-works-title {
     @include latest-works-title;
+}
+
+// SUBPAGES / CARDS TITLES
+.subpage__card-title {
+    @include homepage-card-title;
+}
+
+.project__title {
+    @include homepage-card-title;
+}
+
+// SUBPAGE / CARD COPY TEXT
+.subpage__card-copy {
+    @include homepage-card-copy;
 }
 
 // WORK SHEETS / RELATED WORKS TITLE
