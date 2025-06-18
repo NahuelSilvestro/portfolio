@@ -8,12 +8,18 @@
     justify-content: space-between; // Distributes space between children
     background-color: $color-dark;
     color: $color-light;
-
+.container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   // Email container at top
     .email-container {
         margin-top: 3rem; // Add space from top
         text-align: center; // Center align content
-        
+        border: 1px solid red;
         @media (min-width: 768px) {
             text-align: left; // Left align on desktop
         }
@@ -41,10 +47,10 @@
 
 // Social icons centered vertically
 .social-icons-container {
-display: flex;
-justify-content: center; // Center horizontally
-align-items: center; // Center vertically
-flex-grow: 1; // Takes up available space
+  display: flex;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
+  flex-grow: 1; // Takes up available space\
 
 .social-icons {
   display: flex;

@@ -98,9 +98,17 @@
   background-color: #232323;
   color: #f8f9fa;
 }
+.contact .container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact .email-container {
   margin-top: 3rem;
   text-align: center;
+  border: 1px solid red;
 }
 @media (min-width: 768px) {
   .contact .email-container {
@@ -220,6 +228,7 @@
 }
 .header__nav .header__menu .header__menu-item .header__link:hover, .header__nav .header__menu .header__menu-item .header__link:focus {
   transition: all 0.2s ease-out;
+  border: none;
 }
 
 .navbar-collapse {
@@ -233,7 +242,7 @@
 }
 
 .navbar-toggler {
-  border: none;
+  border-style: none;
   padding: 0.5rem;
   position: relative;
   width: 30px;
@@ -383,6 +392,11 @@
     padding: 0px 180px 0px 180px;
   }
 }
+.disclaimer-text {
+  text-transform: none;
+  font-size: 14px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
