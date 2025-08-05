@@ -99,7 +99,6 @@
   color: #f8f9fa;
 }
 .contact .container {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +107,6 @@
 .contact .email-container {
   margin-top: 3rem;
   text-align: center;
-  border: 1px solid red;
 }
 @media (min-width: 768px) {
   .contact .email-container {
@@ -116,7 +114,6 @@
   }
 }
 .contact .email-container .container {
-  border: 1px solid red;
   min-height: 90vh;
 }
 .contact .email-container .container .contact-title {
@@ -420,6 +417,7 @@ body {
 .section__title {
   text-align: center;
   padding: 24px 0px 24px;
+  text-transform: uppercase;
 }
 
 .works__card-name {
