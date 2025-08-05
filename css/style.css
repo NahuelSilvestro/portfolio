@@ -342,7 +342,6 @@
   }
   .subpage .subpage__card-container {
     border-bottom: 1px solid #818181;
-    border: 1px solid blue;
   }
 }
 @media (min-width: 991.9px) {
@@ -351,7 +350,6 @@
   }
   .subpage .subpage__card-container {
     padding: 50px 0px 50px 0px;
-    border: 1px solid red;
   }
 }
 .sheet__main {
