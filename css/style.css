@@ -340,9 +340,6 @@
     padding: 0px 80px 0px 80px;
     margin-top: 76px;
   }
-  .subpage .subpage__card-container {
-    border-bottom: 1px solid #818181;
-  }
 }
 @media (min-width: 991.9px) {
   .subpage {
